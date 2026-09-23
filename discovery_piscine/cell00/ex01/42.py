@@ -1,1 +1,2 @@
-print("42$")
+num = 42
+print(num)
