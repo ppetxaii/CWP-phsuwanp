@@ -67,7 +67,7 @@ def checkmate(board):
                 for dr, dc in directions:
                     rr, cc = r + dr, c + dc
                     while 0 <= rr < n and 0 <= cc < n:
-                        if grid[rr][cc] not in ('.', ' '):
+                        if grid[rr][cc] in ('P', 'B', 'R', 'Q', 'K'):
                             if (rr, cc) == king_pos:
                                 is_check = True
                             break
